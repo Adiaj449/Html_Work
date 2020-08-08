@@ -1,0 +1,30 @@
+.heading
+{
+    background-color: aliceblue;
+    padding: 15px;
+    
+}
+.alert-prompt{
+    padding: 20px;
+    background-color: bisque;
+}
+.timeout{
+    padding: 20px;
+    background-color: honeydew;
+}
+.innertHtmlText{
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+}
+.appendChildParent{
+    background-color: lightsteelblue;
+    padding: 20px;
+}
+.querySelector{
+    background-color: linen;
+    padding:20px
+}
+.eventListner{
+    background-color: lightseagreen;
+    padding:20px
+}

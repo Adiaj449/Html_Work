@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+    <!--Custom Scirpt-->
+    <script src="./script/script.js"></script>
+    <!--Custom Style-->
+    <link rel="stylesheet" href="./Style/style.css">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container heading mt-5">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h1>Welcome to HTML Task</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center alert-prompt">
+        <h3>Prompt,Alert & confirm</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <button class="btn btn-primary" onclick="displayPrompt()">Click for Prompt</button>
+                <br>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" onclick="displayAlert()">Click for Alert</button>
+                <br>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" onclick="displayConfirm()">Click for confirm</button>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center timeout">
+        <h3>Set Time Interval and Set Time Out</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <button class="btn btn-primary" onclick="showTimeout()">Click for Set Time Out</button>
+                <br>
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary" onclick="showTimeInterval()">Click for Set Time Interval</button>
+                <br>
+                <br>
+                <p id="dateTime"></p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center innertHtmlText">
+        <h3>innerHTML vs innerText</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <p id="innerTxt">Hello Innert Text Display on Alert <span></span></p>
+                <button class="btn btn-primary" onclick="showInnerTxt()">InnerText</button>
+                <br>
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <p id="innerHtm">Hello Innert Html Text Display on Alert with Tag <span></span></p>
+                <button class="btn btn-primary" onclick="showInnerHTML()">InnerHtml</button>
+                <br>
+                <br>
+                <p id="dateTime"></p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center appendChildParent">
+        <h3>Append vs AppendChild</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                
+                <button class="btn btn-primary" onclick="appendList()">Append</button>
+                <br>
+                <br>
+                <ol id="language" class="text-left">
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                </ol>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary" onclick="appendChildList()">Append Child</button>
+                <br>
+                <br>
+                <ol id="role" class="text-left">
+                    <li>Application Developer</li>
+                    <li>Programmer</li>
+                    
+                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center querySelector">
+        <h3>QuerySelector & QuerySelectorAll</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <button class="btn btn-primary" onclick="getQuerySelector()">Query Selector for heading class</button>
+                <br>
+                <br>
+                <div id="displayDev">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary" onclick="getQuerySelectorAll()">Query Selector for all which are using timeout class Child</button>
+                <br>
+                <br>
+                <div id="displayAll">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center eventListner">
+        <h3>QuerySelector & QuerySelectorAll</h3>
+        <br>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <button id="clickBtn" class="btn btn-danger" onclick="eventListner()">Click for Button Addition</button>
+                <br>
+                <br>
+                <div id="showBtn">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+    
+</body>
+</html>
